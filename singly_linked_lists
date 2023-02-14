@@ -14,7 +14,8 @@ class LinkedList:
     def insertEnd(self, val):
         self.tail.next = ListNode(val)
         self.tail = self.tail.next
-
+    
+    #remove at index i (essentially O(n) time complexity)
     def remove(self, index):
         i = 0
         curr = self.head
